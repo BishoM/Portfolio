@@ -18,28 +18,51 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="project.html">Project</a></li>
                 <li><a href="#" class="active">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
             </ul>
         </div>
     </div>
     <main>
         <div class="container-contact">
-            <div class="contact-profile">
+            <!-- <div class="contact-profile">
                 <img src="images/shobi-about.jpg" alt="Moise profile">
+            </div> -->
+            <div class="contact-address">
+                <div class="card-up">
+                <div class="icon"><img src="images/icon/address.PNG" alt=""></div>
+                <div class="title">Address</div>
+                <div class="body">Kigali, Gasabo KG 700 St. Rwanda</div> 
+                </div>
+                <div class="card-down">
+                   <div class="card-left">
+                    <div class="icon"><img src="images/icon/email.PNG" alt=""></div>
+                    <div class="title">Email</div>
+                    <div class="body">bishomoise@gmail.com</div>
+                   </div>
+                   <div class="card-right">
+                    <div class="icon"><img src="images/icon/call-me.PNG" alt=""></div>
+                    <div class="title">Call Me</div>
+                    <div class="body">+250 788 392 135</div>
+                   </div>
+                    <!-- Kigali, Gasabo KG 700 St. Rwanda<br><br>
+                    bishomoise@gmail.com<br><br>
+                    +250 788 392 135 -->
+                </div>
             </div>
             <div class="contact-desc">
                 <div class="contact-title">
-                    Contact Us
+                    Get in touch
                 </div>
                 <div class="contact-body">
                     <form action="#" method="POST">
                         <div class="input">
-                            <input type="text" name="names" placeholder="Names">
+                            <input type="text" required class="form-control" name="names" placeholder="Names">
                         </div>
                         <div class="input">
-                            <input type="email" name="email" placeholder="Email">
+                            <input type="email" required class="form-control" name="email" placeholder="Email">
                         </div>
                         <div class="input">
-                            <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                            <textarea name="message" class="form-control" required id="" cols="30" rows="5" placeholder="Message"></textarea>
                         </div>
                         <div class="button">
                             <button>Send Message</button>
