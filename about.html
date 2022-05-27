@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./images/LOG-MIN.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <title>About Me</title>
 </head>
 
@@ -68,7 +72,8 @@
         </div>
 
         <div class="experience-title">
-             <span><img src="images/experience.jpg" alt="icon"></span> Work Experience
+            <!-- <span><img src="images/experience.jpg" alt="icon"></span>  -->
+            <i class="fa fa-briefcase"></i> Work Experience
           </div>
         <div class="card-experience">
             <div>
@@ -114,78 +119,105 @@
         <div class="card-skills">
             <div class="card-title">
                 <div class="skills-title">
-                    <span><img src="images/experience.jpg" alt="icon"></span> Skills
+                    <!-- <span><img src="images/experience.jpg" alt="icon"></span> -->
+                    <i class="fa fa-head-side-virus" aria-hidden="true"></i> Skills
                 </div>
             </div>
             <div class="card-body">
-                <div class="card">
-                    <div class="card-title">
-                        Laravel
+                <div class="wrapper">
+
+                    <div class="card">
+                      <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                      </div>
+                      <div class="text">Laravel</div>
                     </div>
-                    <div class="card-body">
-                        ewfegfb
+
+                    <div class="card html">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">HTML</div>
+                      </div>
+
+                      <div class="card css">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">CSS</div>
+                      </div>
+
+                      <div class="card android">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">Android</div>
+                      </div>
+
+                    <div class="card js">
+                      <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span></span></div>
+                      </div>
+                      <div class="text">JavaScript</div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        HTML
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        CSS
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        JavaScript
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        Spring Boot
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        ReactJs
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        Android
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-title">
-                        Python
-                    </div>
-                    <div class="card-body">
-                        ewfegfb
-                    </div>
-                </div>
+
+                    <div class="card spring">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">Spring Boot</div>
+                      </div>
+
+                      <!-- <div class="card react">
+                        <div class="circle">
+                          <div class="bar"></div>
+                          <div class="box"><span></span></div>
+                        </div>
+                        <div class="text">React JS</div>
+                      </div> -->
+                    
+                 
             </div>
         </div>
 
     </main>
+    <script>
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 0.86,
+          fill: {color:[ '#17AFDF']}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".html .bar").circleProgress({
+          value: 0.90
+        });
+        $(".css .bar").circleProgress({
+          value: 0.74
+        });
+        $(".js .bar").circleProgress({
+          value: 0.40
+        });
+        $(".spring .bar").circleProgress({
+          value: 0.59
+        });
+        $(".android .bar").circleProgress({
+          value: 0.70
+        });
+        $(".react .bar").circleProgress({
+          value: 0.15
+        });
+      </script>
+  
 </body>
 
 </html>
