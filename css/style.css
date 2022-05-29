@@ -9,7 +9,7 @@
 :root
 {
   --color:white;
-  --blue:#17AFDF;
+  --blue:green;
   --dark:rgba(0, 0, 0, 0.418);
   --lightblue:rgba(195, 229, 238, 0.33);
   --black: black;
@@ -28,10 +28,13 @@
   position: fixed;
   background-color: #FFFFFF;
   width: 100%;
+
   z-index: 100;
 }
 main{
   padding-top: 4rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 .navbar .logo{
   padding: 1em;
@@ -46,6 +49,9 @@ main{
   display: flex;
   justify-content: space-around;
   margin-right: 4rem;
+}
+.navbar .nav-menu ul li a {
+  color: black;
 }
 .navbar .nav-menu ul li{
   list-style: none;
@@ -94,7 +100,7 @@ height:594px;
 }
 .card .card-body{
   font-family: 'Times New Roman';
-font-style: italic;
+/* font-style: italic; */
 margin-top: 1rem;
 font-weight: 400;
 text-align: left;
@@ -135,10 +141,6 @@ font-size: 30px;
   grid-template-rows: 1fr 1fr;
   text-align: center;
   
-}
-main{
-  margin-left: 5rem;
-  margin-right: 5rem;
 }
 
 .main2 .profile{
@@ -201,11 +203,10 @@ main .container-about .container{
   margin-top: 1rem;
 }
 main .container-about .container .card-title{
-  font-size: 40px;
-  font-weight: bold;
-  margin-left: 1rem;
+  font-size: 30;
   color: var(--blue);
-  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 main .container-about .container .card-body{
   font-size: 20px;
@@ -255,7 +256,7 @@ main .container-about .container .download .hire{
   border-radius: 50px;
 }
 main .card-experience{
-  margin-left: 3rem;
+  margin-left: 5rem;
   border-left: 1px solid black;
   position: relative;
 }
@@ -342,7 +343,8 @@ main .card-skills .card-body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: 6rem;
+  padding-left: 5rem;
 }
 
 main  .card-skills .card-body .card{
@@ -404,24 +406,29 @@ main .container-services .service-body{
   grid-template-columns: 1fr 1fr 1fr;
 }
 main .container-services .service-body .card .card-title{
-  margin-top: 1rem;
-  color: var(--black);
+  margin-top: 0.5rem;
+  color: var(--blue);
   font-size: 28px;
   font-weight: bold;
 }
+main .container-services .service-body .card .card-title .icon{
+  color: var(--blue);
+  font-size: 55px;
+  margin-bottom: 0.5rem;
+}
 main .container-services .service-body .card{
   margin-top: 1rem;
-  width: 400px;
-  height: 300px;
+  
   justify-items: center;
   margin-left: 1rem;
   margin-bottom: 0rem;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   background-color:  rgba(0, 0, 0, 0.01);
   text-align: center;
   width: auto;
   height: auto;
+  padding: 1rem;
 }
 main .container-services .service-body .card .card-body{
   font-family: 'Times New Roman', Times, serif;
@@ -509,6 +516,7 @@ main .container-services .service-body .card .card-body{
 }
 
 
+/* Contact CSS */
 main .container-contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -517,30 +525,23 @@ main .container-contact{
 main .contact-desc{
   margin-top: 1rem;
 }
-/* main .container-contact .contact-profile img{
-  width: 300px;
-  height: 414px;
-  margin-left: 3rem;
-  margin-top: 1rem;
-} */
 main .container-contact .contact-address{
   width: 400px;
   height: 500px;
   margin-left: 1rem;
   margin-top: 1rem;
-  font-size: 22px;
   display: grid;
   grid-template-rows: 1fr 1.3fr;
   align-content: space-between;
   margin-top: 1rem;
 }
 .container-contact .contact-address .card-down{
-  font-size: 22px;
+  /* font-size: 22px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .container-contact .contact-address .card-up{
-  font-size: 22px;
+  /* font-size: 22px; */
   width: 550px;
   height: 200px;
   background: rgba(0, 0, 0, 0.01);
@@ -670,6 +671,9 @@ main .container-contact .contact-desc .contact-body button{
   border-radius: 8px;
   cursor: pointer;
 }
+/* End of contact CSS */
+
+/* start of Login */
 main .container-login .card-login{
   width: 400px;
   height: 400px;
@@ -807,35 +811,757 @@ main .container-project .card-project .project-body .card .card-body .slider-tex
   box-sizing: border-box;
 }
 
+.footer{
+  background-color: var(--blue);
+  width: 100%;
+  height: auto;
+}
+.footer .footer-card{
+  text-align: center;
+  padding: 1rem;
+  font-size: 22px;
+  padding: 1rem;
+}
+.footer .footer-card a{
+  color: white;
+}
+.footer .footer-card .name, .menu, .hire, .social{
+  margin-bottom: 0.5rem;
+}
+.footer .footer-card .hire button{
+  background-color: black;
+  width: 200px;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+  position: initial;
+  cursor: pointer;
+}
 /* Responsive */
-@media(  max-width:999px) {
-main .container {
-display: flex;
-flex-direction: column;
-margin: auto;
-margin-left: auto;
-margin-right: auto;
-}
-.main2 .outer-layer {
-  outline: 1px solid black;
-  height: 400px;
-  width: 400px;
-  background-color: white;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
+@media(  max-width:600px) {
+  /* Home responsive */
+  main{
+    padding-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  main .container{
+    display: flex;
+    flex-direction: column;
+    }
+    main .container img{
+      cursor: pointer;
+    }
+    main .container .main1{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      border: var(--blue) solid 0.1px;
+      /* border-left: var(--blue) solid 0.1px; */
+      margin-top: 2rem;
+      height: auto;
+      width: auto;
+    }
+    .container .main1 .card{
+      width: 84%;
+      height: 90%;
+      padding: 1rem;
+      justify-items: center;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 0.5rem;
+      background-color:  rgba(0, 0, 0, 0.01);
+      text-align: center;
+    }
+    .card h1{
+      margin-top: 1rem;
+      font-size: 24px;
+    }
+    .card .card-body{
+      font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    }
+    .main1 .descr{
+      color: var(--blue);
+      font-weight: bold;
+     word-wrap: break-word;
+     width: auto;
+     height: 100%;
+     margin-top: 2rem;
+      display: flex;
+      margin-left: 6rem;
+      position:unset;
+    }
+    .main1 .descr span{
+      color: black;
+      margin-right: 0.5rem;
+    }
+    .main1 .descr div{
+      font-size: 20px;
+    }
+    .poylgon{
+      position: absolute;
+      top: 60%;
+      right: 45%;
+      width: 70px;
+      height: 70px;
+    }
+    .container .main2{
+      background-color: var(--lightblue);
+      height:432px;
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      text-align: center; 
+    }
+    .main2 .profile{
+      height: 550px;
+      text-align: center;
+    }
+    .profile .profile-title{
+      padding: 2rem;
+      font-size: 20px;
+    }
+    .profile .profile-title span{
+      color: var(--blue);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      
+    }
+    .profile .profile-title div{
+      margin-top: 1rem;
+    }
+    .main2 .outer-layer{
+      outline: 1px solid black;
+      height:170px;
+      width: 170px;
+      background-color: white;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      /* margin-left: 6rem; */
+    }
+    .main2 .image{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: black;
+      /* overflow: hidden; */
+      /* margin-left: 1.5rem; */
+      margin-left: 0.6rem;
+    }
+    .main2 .image img{
+      height:160px;
+      width: 160px;
+    }
+    /* End of home responsive */
+    
+    /* About responsive */
+    main .container-about{
+      display: flex;
+      flex-direction: column;
+    margin-top: 0.5rem;
+    }
+    main .container-about .profile img{
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      /* margin-left: 3rem; */
+      margin-top: 1rem;
+    }
+    main .container-about .container{
+      font-family: 'Times New Roman';
+      border:var(--blue) solid 0.1px;
+      margin-left: 0.5rem;
+      margin-top: 1rem;
+    }
+    main .container-about .container .card-title{
+      font-size: 20px;
+      color: var(--blue);
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    main .container-about .container .card-body{
+      font-size: 14px;
+      margin-left: 1rem;
+    }
+    .container-about .container{
+      display: flex;
+      flex-direction: column ;
+    }
+    .container-about .container .container-details{
+      font-size: 16px;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-content: space-between;
+    }
+    .container-about .container .container-details .title{
+      font-weight: bold;
+    }
+    .container-about .container .container-details .body{
+      font-weight: normal;
+    }
+    main .container-about .container .container-completed-pro{
+      font-size: 20px;
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    main .container-about .container .container-completed-pro span{
+      color: var(--blue);
+      font-weight: bold;
+    }
+    main .container-about .container .download{
+      margin-top: 1rem;
+      margin-bottom: 1.3rem;
+      position: relative;
+    }
+    main .container-about .container .download a{
+      background-color: var(--blue);
+      margin-left: 3rem;
+      color: white;
+      padding: 1rem;
+      border-radius: 50px;
+    }
+    main .container-about .container .download .hire{
+      background-color: black;
+      margin-left: 5rem;
+      color: white;
+      padding: 1rem;
+      border-radius: 50px;
+      margin-left: 3rem;
+    }
+    main .card-experience{
+      margin-left: 0rem;
+      border-left: 1px solid black;
+      /* position: relative; */
+    }
+    
+    main .card-experience div{
+      position: relative;
+    }
+    main  .card-experience div .card::before{
+    height: 20px;
+    width: 20px;
+    color: var(--blue);
+    border:3px solid var(--blue);
+    content: "";
+    z-index: 3;
+    background-color: white;
+    position: absolute;
+    left: -17.5%;
+    border-radius: 50%;
+    top: 29px;
+    }
+    main .card-experience div .card::after{
+      height: 1px;
+      width: 15%;
+      color: var(--blue);
+      border:1px solid var(--blue);
+      content: "";
+      z-index: 2;
+      background-color: white;
+      position: absolute;
+      overflow: hidden;
+      left: -14.6%;
+      top: 40px;
+    }
+    
+    main  .experience-title{
+      font-size: 24px;
+      color: var(--blue);
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+    main .card-experience .card{
+      margin-top: 1rem;
+      width: auto;
+      height: auto;
+      margin-left: 3rem;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+      border-radius: 0.5rem;
+      background-color:  rgba(0, 0, 0, 0.01);
+      text-align: center;
+      padding: 1rem;
+    }
+    main .card-experience .card .card-body{
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    main .card-experience .card .card-title{
+      font-weight: bold;
+      text-align: left;
+      margin-left: 1rem;
+      font-size: 20px;
+    }
 
-}
-.container .main1 .card {
-  margin-top: 2rem;
-  width: 300px;
-  height: 270px;
-  justify-items: center;
-  
-  box-shadow: 0px 4px 18px rgb(0 0 0 / 25%);
-  border-radius: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.01);
-}
+    /* remaining */
+    main .card-skills{
+      font-size: 22px;
+    }
+    main .card-skills .card-title .skills-title span img{
+      height: 20px;
+    width: 20px;
+    border-radius: 90px;
+    }
+    main .card-skills .card-title .skills-title{
+      font-size: 30;
+      color: var(--blue);
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    main .card-skills .card-body{
+      margin: 2rem;
+      gap: 1px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: 6rem;
+      padding-left: 5rem;
+    }
+    
+    main  .card-skills .card-body .card{
+      margin-top: 1rem;
+      width: 250px;
+      height: 250px;
+      justify-items: center;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+      border-radius: 0.5rem;
+      background-color:  rgba(0, 0, 0, 0.01);
+      text-align: center;
+      margin-bottom: 0.5rem;
+      align-items: center;
+    }
+    main .card-skills .card-title .skills-title{
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
+    main .card-skills .card-body .card .card-body .progress::before{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(56, 11, 11);
+      border-radius: 50%;
+    }
+    
+    main .card-skills .card-body .card .card-body .progress{
+      position: absolute;
+      background-color: white;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      text-align: center;
+    }
+    main .card-skills .card-body .card .card-body .progress span{
+    vertical-align: middle;
+    }
+    .wrapper{
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .wrapper .card{
+      background: #fff;
+      width: calc(33% - 20px);
+      height: 300px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    }
+    .wrapper .card .circle{
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      cursor: default;
+    }
+    .card .circle .box,
+    .card .circle .box span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    .card .circle .box{
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      transition: all 0.2s;
+    }
+    .card .circle:hover .box{
+      transform: translate(-50%, -50%) scale(0.91);
+    }
+    .card .circle .box span,
+    .wrapper .card .text{
+      background: -webkit-linear-gradient(left, #17AFDF, #17AFDF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .circle .box span{
+      font-size: 38px;
+      font-family: sans-serif;
+      font-weight: 600;
+      transform: translate(-45%, -45%);
+      transition: all 0.1s;
+    }
+    .card .circle:hover .box span{
+      transform: translate(-45%, -45%) scale(1.09);
+    }
+    /* End of remaining */
+    /* End of about */
+
+    /* Start of Service responsive */
+    main .container-services{
+      margin-top: 1rem;
+      margin-left: 0rem;
+    }
+    main .container-services .card-service .card-title .service-title{
+      font-size: 26;
+      color: var(--blue);
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    main .container-services .service-body{
+      display: flex;
+      flex-direction: column;
+    }
+    main .container-services .service-body .card{
+      margin-top: 0.3rem;
+      justify-items: center;
+      margin-left: 0rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.10);
+      border-radius: 0.5rem;
+      background-color:  rgba(0, 0, 0, 0.01);
+      text-align: center;
+      width: auto;
+      height: auto;
+      padding: 0.5rem;
+    }
+    main .container-services .service-body .card .card-title{
+      margin-top: 0rem;
+      color: var(--blue);
+      font-size: 20px;
+      font-weight: bold;
+    }
+    main .container-services .service-body .card .card-title .icon{
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    main .container-services .service-body .card .card-body{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px;
+    }
+    /* End of Service responsive */
+
+    /* Start of project responsive */
+    main .container-project{
+      margin-top: 0.5rem;
+      margin-left: 0rem;
+    }
+    main .container-project .card-project .card-title .project-title{
+      font-size: 25;
+      color: var(--blue);
+      margin-left: 0.5rem;
+      margin-top: 1rem;
+    }
+    main .container-project .card-project .project-body{
+      display: flex;
+      flex-direction: column;
+    }
+    main .container-project .project-body .card{
+      margin-top: 1rem;
+      width: auto;
+      height: auto;
+      justify-items: center;
+      margin-left: 0rem;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 0.5rem;
+      background-color:  rgba(0, 0, 0, 0.01);
+      text-align: center;
+    }
+    main .container-project .card-project .project-body .card .card-body {
+     
+      border-radius: 0.5rem;
+      position: relative;
+    
+    }
+    .card .card-body img{
+      width: 95%;
+      height: 89%;
+      top: 0px;
+      cursor: pointer;
+    }
+    .card .card-body:hover .project-description{
+      display: block;
+      /* background-color: white; */
+    }
+    .project-description{
+      position: absolute;
+      top: 1px;
+      display: none;
+      width: 95%;
+      height: 100%;
+      font-size: 18px;
+      background-color: var(--lightblue);
+      position: absolute;
+      padding: 0.5rem;
+    }
+    .project-description span{
+      position: absolute;
+      color: black;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .project-description a{
+      text-decoration: none;
+      color: var(--blue);
+      cursor: pointer;
+      font-size: 14;
+    }
+    main .container-project .card-project .project-body .card .card-body .slider-text h2 span{
+      color: #3e64ff;
+        text-decoration: underline;
+    }
+    *, *::before, *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    /* end of project */
+
+    /* Contact responsive */
+    main .container-contact{
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+    main .contact-desc{
+      margin-top: 0rem;
+    }
+    main .container-contact .contact-address{
+      width: auto;
+      height: auto;
+      margin-left: 0rem;
+      margin-top: 0rem;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-content: space-between;
+      margin-top: 1rem;
+    }
+    .container-contact .contact-address .card-down{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .container-contact .contact-address .card-up{
+      width: auto;
+      height: auto;
+      background: rgba(0, 0, 0, 0.01);
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      margin-left: 0rem;
+      margin-bottom: 1rem;
+      color: var(--blue);
+      text-align: center;
+      font-weight: bold;
+      background-color: #FFFFFF;
+    }
+    .container-contact .contact-address .card-up .title{
+      font-size: 20px;
+      margin-top: 0rem;
+    }
+    .container-contact .contact-address .card-up .body{
+      font-size: 16px;
+      color: var(--dark);
+      margin-top: 0.2rem;
+    }
+    .container-contact .contact-address .card-up .icon img{
+      width: 60px;
+      height: 60px;
+    }
+    .container-contact .contact-address .card-down .card-left{
+      width: auto;
+      height: auto;
+      background: rgba(0, 0, 0, 0.01);
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      margin-left: 0.3rem;
+      margin-bottom: 1rem;
+      color: var(--blue);
+      text-align: center;
+      font-weight: bold;
+      background-color: #FFFFFF;
+    }
+    .container-contact .contact-address .card-down .card-left .icon img{
+      width: 60px;
+      height: 60px;
+    }
+    .container-contact .contact-address .card-down .card-right .icon img{
+      width: 60px;
+      height: 60px;
+    }
+    .container-contact .contact-address .card-down .card-left .title{
+      font-size: 20px;
+      margin-top: 0.1rem;
+    }
+    .container-contact .contact-address .card-down .card-right .title{
+      font-size: 20px;
+     margin-top: 0.1rem;
+    }
+    .container-contact .contact-address .card-down .card-right{
+      font-size: 22px;
+      width: auto;
+      height: auto;
+      background: rgba(0, 0, 0, 0.01);
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--blue);
+      text-align: center;
+      font-weight: bold;
+      background-color: #FFFFFF;
+      padding: 0.4rem;
+    }
+    .container-contact .contact-address .card-down .card-left .body{
+      font-size: 16px;
+      color: var(--dark);
+      margin-top: 0.2rem;
+      word-wrap: break-word;
+    }
+    .container-contact .contact-address .card-down .card-right .body{
+      font-size: 16px;
+      color: var(--dark);
+      margin-top: 0.2rem;
+      word-wrap: break-word;
+    }
+    main .container-contact .contact-desc{
+      width: auto;
+      height: auto;
+      background: rgba(0, 0, 0, 0.01);
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 0.2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+
+    }
+    main .container-contact .contact-desc .contact-title{
+      margin-top: 0rem;
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 0.3rem;
+      margin-left: 0rem;
+    }
+    main .container-contact .contact-desc .contact-body .input input{
+      box-sizing: border-box;
+      width: 80%;
+      height: 30px;
+      background: #FFFFFF;
+      border: 1px solid #17AFDF;
+      border-radius: 6px;
+      padding-left: 0.5rem;
+      /* margin-left: 2rem; */
+      margin-bottom: 1rem;
+    }
+    input::first-letter{
+      margin-left: 4rem;
+    }
+    input:focus{
+      border-color:7px solid #17AFDF;
+      box-shadow: 0px 0px 4px 0.5px var(--blue);
+      outline: none;
+    }
+    textarea:focus{
+      border-color:1px solid #17AFDF;
+      box-shadow: 0px 0px 4px 0.5px var(--blue);
+      outline:none; 
+    }
+    main .container-contact .contact-desc .contact-body .input textarea{
+      box-sizing: border-box;
+      width: 80%;
+      height: 60px;
+      background: #FFFFFF;
+      border: 1px solid #17AFDF;
+      font-size: 12px;
+      padding-left: 1rem;
+      padding-top: 0.5rem;
+    }
+    main .container-contact .contact-desc .contact-body button{
+      box-sizing: border-box;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+      width: 80%;
+      height: 35px;
+      margin-top: 1rem;
+      background: #17AFDF;
+      border: 1px solid #17AFDF;
+      border-radius: 6px;
+      cursor: pointer;
+      /* margin-bottom: 1rem; */
+    }
+    /* end of contact responsive */
+
+    /* Login Responsive */
+    main .container-login .card-login{
+      width: auto;
+      height: 350px;
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      top: 5rem;
+      background: rgba(0, 0, 0, 0.01);
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+    }
+    main .container-login .card-login .card-title{
+      margin-top: 1rem;
+      color: var(--blue);
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 3rem;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0rem;
+    }
+    main .container-login .card-login .card-body .form-group .control input{
+      box-sizing: border-box;
+      width: 80%;
+      height: 35px;
+      background: #FFFFFF;
+      border: 1px solid #17AFDF;
+      border-radius: 8px;
+      margin-left: 2rem;
+      margin-bottom: 2rem; 
+      padding-left: 1rem;
+    }
+    main .container-login .card-login .card-body .form-group input{
+      margin-left: 2rem;
+      }
+    main .container-login .card-login .card-body .form-group .remember{
+      margin-left: 0rem;
+      }
+    main .container-login .card-login .card-body .form-group label{
+      margin-left: 2rem;
+    }
+    main .container-login .card-login .card-body .form-group button{
+      margin-left: 2rem;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      position: absolute;
+      width: 80%;
+      height: 35px;
+      margin-top: 2rem;
+      background: #17AFDF;
+      border: 1px solid #17AFDF;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    /* End of Login responsive */
 }
