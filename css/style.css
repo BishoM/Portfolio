@@ -810,7 +810,27 @@ main .container-project .card-project .project-body .card .card-body .slider-tex
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+main .prodetails-container .image{
+  width: 70%;
+  height: 50%; 
+  margin-top: 2rem;
+  
+ }
+ main .prodetails-container .image img{
+  width: 80%;
+  height: 90%;
+ }
+ main .prodetails-container .details{
+  font-size: 20px;
+  padding: 0.5rem;
+ }
+ main .prodetails-container .details span{
+   font-size: 25;
+   font-weight: bold;
+   color: var(--blue);
+ }
 
+ 
 .footer{
   background-color: var(--blue);
   width: 100%;
