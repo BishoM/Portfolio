@@ -39,7 +39,7 @@ main{
 .navbar .logo{
   padding: 1em;
   display: inline-flex;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .navbar .logo span{
   font-weight: 900;

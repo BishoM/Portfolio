@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --green: #17afdf;
+}
+body {
+  background: rgba(217, 217, 217, 0.25);
+}
+section.sidebar {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--white);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  left: 0;
+  float: left;
+}
+
+.sidebar .side-logo {
+  margin: auto;
+  place-items: center;
+  padding-left: 40%;
+  position: absolute;
+  display: flex;
+  padding-right: 50% !important;
+  border-bottom: 0.1px solid lightgray;
+}
+.side-logo img {
+  width: 60px;
+  height: 60px;
+}
+section .sidebar-menu {
+  margin-top: 90px;
+  color: var(--green);
+  font-weight: 500;
+  font-size: 19px;
+}
+.sidebar-menu ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  position: relative;
+}
+.sidebar-menu ul a li {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  width: 80%;
+  padding-bottom: 1rem;
+  margin-top: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid var(--green);
+}
+.sidebar-menu ul a li {
+  display: flex;
+  justify-content: space-around;
+}
+.sidebar-menu ul a li:hover {
+  color: var(--white);
+  background-color: var(--green);
+}
+.sidebar-menu ul a li.active {
+  color: var(--white);
+  background-color: var(--green);
+}
+.main{
+    position: absolute;
+    width: 80%;
+    margin-left: 20%;
+  
+}
+section .navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--green);
+    font-weight: 800;
+    font-size: 19px;  
+    border-bottom: 0.1px solid lightgray;
+}
+.navbar .profile{
+    width: 50px;
+    height: 50px;
+    place-content: center;
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 0.2rem;
+    justify-content:center;
+    text-align: center;
+    padding-top: 0.7rem;
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--white);
+}
+.navbar .bread{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.main-content{
+    margin-top: 80px;
+
+}
+.main-content .rows{
+margin-left: 5rem;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+
+}
+.card{
+    height: 90px;
+    width: 400px;
+    border-radius: 9px;
+    background-color: var(--white);
+    margin: 1rem;
+    box-shadow:0px 4px 18px rgba(0, 0, 0, 0.25); ;
+}

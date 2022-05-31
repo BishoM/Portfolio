@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- table css and JS -->
+    <link href="../css/adminlte.min.css" rel="stylesheet">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/adminlte.min.js" defer></script>
+    <!-- end of table css and JS -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" href="../images/LOG-MIN.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  </head>
+  <body>
+    <section class="sidebar">
+      <div class="side-logo">
+        <img src="../images/LOG-MIN.png" alt="" />
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <a href="dashboard.html">
+            <li>
+              <i class="fa fa-home"></i> <span>Dashboard</span>
+            </li>
+          </a>
+          <a>
+            <li><i class="fa fa-calendar-times-o"></i> <span>Service</span></li>
+          </a>
+          <a>
+            <li><i class="fa fa-briefcase"></i> <span>Project</span></li>
+          </a>
+          <a>
+            <li class="active"><i class="fa fa-comments"></i> <span>Message</span></li>
+          </a>
+        </ul>
+      </div>
+    </section>
+    <section class="main">
+      <div class="navbar">
+        <div class="bread">Dashboard/Conatct</div>
+        <div class="profile">BM</div>
+      </div>
+      <div class="main-content">
+        <!-- <div class="rows"> -->
+            <table class="table table-condensed table-hover results">
+                <thead>
+                    <tr>
+                    <th >N <sup>o</sup></th>
+                    <th>Names</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                        <td>1</td>
+                        <td>Mucyo Gabriel</td>
+                        <td>mucyog@gmail.com</td>
+                        <td><button class="btn btn-danger">Delete</button></td>
+                        
+                    
+                    </tr>
+                    <tr class="expandable-body">
+                        
+                        <td colspan="4">
+                            <p>
+                                Set of procedures involved in writing software for small computing devices, such as smartphones and other hand-held devices. Set of procedures involved in writing software for small computing devices, such as smartphones and other hand-held devices 
+                            </p>
+                        </td>
+                        </tr>
+                        <tr data-widget="expandable-table" aria-expanded="false">
+                            <td>1</td>
+                            <td>mento Clement</td>
+                            <td>mento12@gmail.com</td>
+                            <td><button class="btn btn-danger">Delete</button></td>
+                            
+                        
+                        </tr>
+                        <tr class="expandable-body">
+                            
+                            <td colspan="4">
+                                <p>
+                                    Set of procedures involved in writing software for small computing devices, such as smartphones and other hand-held devices. Set of procedures involved in writing software for small computing devices, such as smartphones and other hand-held devices 
+                                </p>
+                            </td>
+                            </tr>
+                </tbody>
+                </table>
+        <!-- </div> -->
+      </div>
+    </section>
+  </body>
+</html>
